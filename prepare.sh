@@ -89,7 +89,7 @@ execute "Update apt packages" 4 $COMMANDS
 # Step 5.
 COMMANDS=(
   # "add-apt-repository ppa:ondrej/php -y"
-  "apt install php8.3-cli php8.3-xml php8.3-curl php8.3-gd unzip make docker-compose-plugin -y > /dev/null 2>&1"
+  "apt install php-cli php-xml php-curl php-gd unzip make docker-compose-plugin -y > /dev/null 2>&1"
 )
 execute "Install PHP8.3, unzip and make. (php packages: 'cli', 'xml', 'curl' and 'gd')" 5 $COMMANDS
 
